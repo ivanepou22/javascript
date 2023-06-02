@@ -61,5 +61,5 @@ const iceCreamOriginal = {
 const iceCreamCopy = iceCreamOriginal;
 iceCreamCopy.Richard;
 iceCreamCopy.Richard = 99;
-console.log(iceCreamCopy)
-console.log(iceCreamOriginal)
+// console.log(iceCreamCopy)
+// console.log(iceCreamOriginal)
