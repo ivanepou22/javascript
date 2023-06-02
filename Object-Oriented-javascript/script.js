@@ -19,4 +19,18 @@ const cat = {
 cat.age += 2;
 cat.name = 'Bambi';
 
-console.log(cat.age);
+// Adding Properties
+// Properties can be added to objects simply 
+// by specifying the property name, then giving it a value. 
+// Let's start off with a blank object, then add two properties:
+
+const printer  = {}
+printer.on = true;
+printer.mode = 'Black and white';
+printer['remainingSheets'] = 168;
+
+printer.print = function () {
+  console.log('The printer is printing!');
+};
+
+console.log(printer)
