@@ -96,3 +96,35 @@ const developer = {
 
 //call
 developer.sayHello();
+
+//Passing Arguments Into Methods
+const developer1 = {
+  name: 'Andrew',
+  sayHello: function () {
+    console.log('Hi there!');
+  },
+  favoriteLanguage: function (language) {
+    console.log(`My favorite programming language is ${language}`);
+  }
+};
+
+developer.favoriteLanguage('JavaScript');
+// My favorite programming language is JavaScript'
+
+const myArray = [ function alerter() { alert('Hello!'); } ];
+myArray[0]();
+
+//💡 Call Methods by Property Name 💡
+// We've been using anonymous functions (i.e., functions without a name) for object methods. However, naming those functions is still
+//  valid JavaScript syntax. Consider the following object, greeter:
+
+const greeter = {
+  greet: function sayHello() {
+    console.log('Hello!');
+  }
+};
+
+//Note that the greet property points to a function with a name: sayHello. 
+// Whether this function is named or not, greet is invoked the same way:
+
+greeter.greet();
