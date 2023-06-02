@@ -35,4 +35,31 @@ printer.print = function () {
 //remove the properties
 const deleted = delete printer.mode;
 
-console.log(deleted)
+function changeToEight(n) {
+  n = 8;// whatever n was, it is now 8... but only in this function!
+}
+
+let n = 7;
+
+changeToEight(n);
+
+//Passing an object
+
+let originalObject = {
+    favoriteColor : 'red'
+}
+
+function setToBlue(object) {
+    object.favoriteColor = 'blue';
+}
+
+const iceCreamOriginal = {
+  Andrew: 3,
+  Richard: 15
+};
+
+const iceCreamCopy = iceCreamOriginal;
+iceCreamCopy.Richard;
+iceCreamCopy.Richard = 99;
+console.log(iceCreamCopy)
+console.log(iceCreamOriginal)
