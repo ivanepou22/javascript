@@ -63,3 +63,36 @@ iceCreamCopy.Richard;
 iceCreamCopy.Richard = 99;
 // console.log(iceCreamCopy)
 // console.log(iceCreamOriginal)
+
+// Comparing an Object with Another Object
+const parrot = {
+  group: 'bird',
+  feathers: true,
+  chirp: function () {
+    console.log('Chirp chirp!');
+  }
+};
+
+const pigeon = {
+  group: 'bird',
+  feathers: true,
+  chirp: function () {
+    console.log('Chirp chirp!');
+  }
+};
+
+const myBird = parrot;
+
+// console.log(parrot === pigeon) false
+// console.log(myBird === parrot) true
+
+// calling methods
+const developer = {
+  name: 'Andrew',
+  sayHello: function () {
+    console.log('Hi there!');
+  }
+};
+
+//call
+developer.sayHello();
