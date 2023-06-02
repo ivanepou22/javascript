@@ -28,9 +28,11 @@ const printer  = {}
 printer.on = true;
 printer.mode = 'Black and white';
 printer['remainingSheets'] = 168;
-
 printer.print = function () {
   console.log('The printer is printing!');
 };
 
-console.log(printer)
+//remove the properties
+const deleted = delete printer.mode;
+
+console.log(deleted)
